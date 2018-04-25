@@ -16,7 +16,7 @@
                 <div class="main-wrapper">
                     <ul>
                         <li>
-                            <a href="index.html"> Home </a>
+                            <a href="index.php"> Home </a>
                         </li>
                     </ul>
                     <div class="nav-login">

@@ -4,9 +4,45 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="sources/css/styles.css" />
+		<style>
+			.parallax {
+				/* The image used */
+				background-image: url("2319160_0.jpg");
+
+				/* Set a specific height */
+				min-height: 900px; 
+
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
         <title> Iron Viking </title>
     </head>
     <body>
-        x
+		<a name="top"></a>
+		<div class="parallax">
+			<a href="#top">Back to top of page</a>
+		</div>
+        <div style="height:1000px;background-color:red;font-size:36px">
+			Scroll Up and Down this page to see the parallax scrolling effect.
+			This div is just here to enable scrolling.
+			Tip: Try to remove the background-attachment property to remove the scrolling effect.
+		</div>
+		<div class="parallax"><a href="#top">Back to top of page</a></div>
+		<div style="height:1000px;background-color:red;font-size:36px">
+			Scroll Up and Down this page to see the parallax scrolling effect.
+			This div is just here to enable scrolling.
+			Tip: Try to remove the background-attachment property to remove the scrolling effect.
+		</div>
+		<div class="parallax"></div>
+		<div style="height:1000px;background-color:red;font-size:36px">
+			Scroll Up and Down this page to see the parallax scrolling effect.
+			This div is just here to enable scrolling.
+			Tip: Try to remove the background-attachment property to remove the scrolling effect.
+		</div>
+		<div class="parallax"></div>
     </body>
 </html>

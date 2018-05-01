@@ -1,0 +1,118 @@
+resources: Iron Viking
+fitness appareal 
+goal
+	dedicated area for live comunication
+	sell 
+	fun
+stick/adhear to a plan
+	overwhelmed by strong people
+	stepping stone
+questionares
+
+ideas
+	templets
+		workout rutien
+		diet
+focal points
+	equipment/apparel
+
+references
+	body building
+background
+	military
+	police
+wants
+	all american made products
+	top-down-tabs
+	no opencomments section
+		only good reviews
+		members only
+		php forms for users data
+	subscriptions
+	ok to fail
+		slowly get better
+		dont give up
+	resolutioners helping hints
+	workout regiments
+		videos under workout tabs
+	image-tabs
+		captions of text
+	search options if needed
+	human faris wheel format
+	realism
+		common joe
+		instant gratification
+			quick search
+	pro-profesional
+	products page 
+		sizing tab
+		reviews
+		few articles-mainly facts and resources
+		secure
+		Return policy 
+			If bag isn't open
+				15 day return policy
+				refund money or size change
+	ambasidor tab form
+	easy to navigate
+	create a name for 
+		vikings 
+		military
+		mp
+		police
+	people to look/feel good
+	simple
+		easy
+		as few "pop ups" as plosible
+	user-friendly
+	product page
+		styliesed (under the help me tab)
+		unisex tab
+		man tab
+		woman tab
+		accesories
+		chalk
+	about me page
+		fact sheet
+			symbols
+				meanings
+				stories
+		Join The Vikings Tab
+			Daily tips
+		IG: Algriffis
+		Snap: Algriffi
+		Twit: FitNordCop
+		facebook: Austin Griffis
+			use official facebook account, not personal
+				link at a later date
+	colors
+		not too flambount
+		earth tones
+		smooth transition
+	easy to change/modify
+	Viking culture and military influences
+	eventually childs apparel page
+ages 18-35 (military age)
+	anyone looking to improve
+	build themselves up stronger
+	main adiancence 
+		military
+endorced by
+	Iron Vikings Apparel
+	power lifting
+assistance
+	macro nutrionts calculator (on main page
+	muscleforms
+		templets
+	competitors with nation wide sales
+		make it heavy (number 1 competitor)
+		bodybuilding.com
+	email Austin: Ironvikingceo@gmail.com
+	C.S. #417-425-5827 (Austin's wife)
+May 1st main basis structure by then (2 weeks)
+
+links for resources
+	https://dawnsdressdiary.wordpress.com/2013/10/19/viking-costume-inspiration-embellishment/
+	https://www.pinterest.com/pin/514958538614379141/
+	https://github.com/MarkleyClassroom/IronViking
+

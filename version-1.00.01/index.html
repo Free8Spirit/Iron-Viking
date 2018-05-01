@@ -7,6 +7,42 @@
         <title> Iron Viking </title>
     </head>
     <body>
-        x
+        <header>
+            <nav>
+                <div class="main-wrapper">
+                    <ul>
+                        <li>
+                            <a href="sources/php/index.php"> Home </a>
+                        </li>
+                    </ul>
+                    <div class="nav-login">
+                        <?php
+                        if (isset($SESSION['u_uid'])) {
+                        echo '<form action="sources/php/logout.inc.php" method="POST">
+                            <button type="submit" name="submit"> Logout </button>
+                        </form>';
+                        } else {
+                        <form action="sources/php/login.inc.php" method="POST">
+                            <input type="text" name="uid" placeholder="Username/e-mail" />
+                            <input type="password" name="pwd" placeholder="password" />
+                            <button type="submit" name="submit"> Login </button>
+                        </form>
+                        <a href="sources/php/signup.php"> Sign up </a>
+                        }
+                        ?>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="main-container">
+            <div class="main-wrapper">
+                <h2> Home </h2>
+                <?php
+                if (isset($_SESSION['u_id'])) {
+                echo "You are logged in!"
+                }
+                ?>
+            </div>
+        </section>
     </body>
 </html>

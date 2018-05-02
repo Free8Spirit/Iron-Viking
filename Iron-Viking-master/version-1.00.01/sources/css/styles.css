@@ -217,7 +217,7 @@ div ul {
 .nav a {
   display:block;
   background: #111;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 0.8em 1.8em;
   text-transform: uppercase;
@@ -232,7 +232,7 @@ div ul {
   box-shadow:
     1px -1px -1px 1px #000,
     -1px 1px -1px 1px #fff,
-    0 0 6px 3px blue;
+    0 0 6px 3px #fff;
   border-radius:6px;
 }
 .nav li {
@@ -249,10 +249,10 @@ div ul {
 }
 .nav > li:hover,
 .nav > li:hover > a {
-  border-bottom-color: blue;
+  border-bottom-color: orange;
 }
 .nav li:hover > a {
-  color:blue;
+  color:orange;
 }
 .nav > li:first-child {
   border-radius: 4px 0 0 4px;
@@ -283,7 +283,7 @@ div ul {
 .nav ul {
   position: absolute;
   white-space: nowrap;
-  border-bottom: 5px solid  blue;
+  border-bottom: 5px solid  orange;
   z-index: 1;
   left: -99999em;
 }
@@ -299,20 +299,20 @@ div ul {
 }
 /* arrow hover styling */
 .nav > li > a:first-child:nth-last-child(2):before {
-  border-top-color: blue;
+  border-top-color: #aaa;
 }
 .nav > li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent;
-  border-bottom-color: blue;
+  border-bottom-color: orange;
   margin-top:-5px
 }
 .nav li li > a:first-child:nth-last-child(2):before {
-  border-left-color: blue;
+  border-left-color: #aaa;
   margin-top: -5px
 }
 .nav li li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent;
-  border-right-color: blue;
+  border-right-color: orange;
   right: 10px;
 }
 @media screen and (max-width: 600px) {

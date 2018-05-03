@@ -28,25 +28,26 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 .fakeimg {
     background-color: #aaa;
     width: 25%;
     padding: 20px;
 }
 
-    nav ul {
-        list-style: none;
-    }
+nav ul {
+    list-style: none;
+}
 
 blockquote, q {
     quotes: none;
 }
 
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
-    }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
 
 a {
     margin: 0;
@@ -99,37 +100,46 @@ input, select {
 a {
     text-decoration: none;
 }
+
 body {
     color: olivedrab;
-    background-color: #ccc;
+    background-color: #403f45;
 }
-.main-wrapper {
+
+/*.main-wrapper {
     margin: 0 auto;
     width: 1000px;
-}
+}*/
+
 header nav {
     width: 100%;
     height: 60px;
     background-color: azure;
 }
+
 header nav ul {
     float: left;
 }
+
 header nav ul li {
     float: left;
     list-style: none;
 }
+
 header nav ul li a {
     font-size: 16px;
     line-height: 63px;
 }
+
 header .nav-login {
     float: right;
 }
+
 header .nav-login form {
     float: left;
     padding: 15px 0px;
 }
+
 header .nav-login form input {
     float: left;
     width: 140px;
@@ -140,6 +150,7 @@ header .nav-login form input {
     background-color: #ccc;
     line-height: 30px;
 }
+
 header .nav-login form button {
     float: left;
     width: 60px;
@@ -149,9 +160,11 @@ header .nav-login form button {
     background-color: #f3f3f3;
     cursor: pointer;
 }
+
 header .nav-login form button:hover {
     background-color: #ccc;
 }
+
 header .nav-login a {
     display: block;
     float: left;
@@ -163,13 +176,41 @@ header .nav-login a {
     line-height: 63px;
     cursor: pointer;
 }
+
 .main-container {
     padding-top: 40px;
-}
-.main-container {
     font-size: 40px;
     line-height: 50px;
     text-align: center;
+    width: 100%;
+}
+
+/*basic structure for main screen*/
+
+.left-pain, .central-pain, .right-pain {
+    float: left;
+    width: 20%;
+    border: 2px groove azure;
+    margin: 1.8%;
+    min-height: 300px;
+}
+
+.central-pain {
+    position: relative;
+    width: 47%;
+}
+
+.central-pain .sub-pain {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.central-pain .sub-pain p {
+    display: inline;
+    width: auto;
+    margin: 5%;
 }
 
 /*signup.php*/
@@ -179,6 +220,7 @@ header .nav-login a {
     margin: auto;
     padding-top: 30px;
 }
+
 .signup-form input {
     width: 90%;
     height: 40px;
@@ -189,6 +231,7 @@ header .nav-login a {
     font-size: 16px;
     line-height: 30px;
 }
+
 .signup-form button {
     display: block;
     margin: 0 auto;
@@ -199,6 +242,7 @@ header .nav-login a {
     font-size: 16px;
     cursor: pointer;
 }
+
 .signup-form button:hover {
     background-color: #111;
 }
@@ -206,127 +250,152 @@ header .nav-login a {
 /* Style for Navigation bar */
 
 div {
-  display: block;
-  text-align: right;
+    display: block;
+    text-align: right;
 }
+
 div ul {
-  margin: 0;
-  padding:0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 .nav a {
-  display:block;
-  background: #111;
-  color: white;
-  text-decoration: none;
-  padding: 0.8em 1.8em;
-  text-transform: uppercase;
-  font-size: 80%;
-  letter-spacing: 2px;
-  text-shadow: 0 -1px 0 #000;
-  position: relative;
+    display: block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
 }
-.nav{
-  vertical-align: top;
-  display: inline-block;
-  box-shadow:
-    1px -1px -1px 1px #000,
-    -1px 1px -1px 1px #fff,
-    0 0 6px 3px blue;
-  border-radius:6px;
+
+.nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px blue;
+    border-radius: 6px;
 }
+
 .nav li {
-  position: relative;
+    position: relative;
 }
+
 .nav > li {
-  float: left;
-  border-bottom: 4px #aaa solid;
-  margin-right: 1px;
+    float: left;
+    border-bottom: 4px #aaa solid;
+    margin-right: 1px;
 }
+
 .nav > li > a {
-  margin-bottom: 1px;
-  box-shadow: inset 0 2em .33em -0.5em #555;
+    margin-bottom: 1px;
+    box-shadow: inset 0 2em .33em -0.5em #555;
 }
+
 .nav > li:hover,
 .nav > li:hover > a {
-  border-bottom-color: blue;
+    border-bottom-color: #013bdb;
 }
+
 .nav li:hover > a {
-  color:blue;
+    background-color: #000302;
+    color: #0571f8;
 }
+
 .nav > li:first-child {
-  border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
 }
-.nav > li:first-child > a {
-  border-radius: 4px 0 0 0;
-}
+
+    .nav > li:first-child > a {
+        border-radius: 4px 0 0 0;
+    }
+
 .nav > li:last-child {
-  border-radius: 0 0 4px 0;
-  margin-right: 0;
+    border-radius: 0 0 4px 0;
+    margin-right: 0;
 }
-.nav > li:last-child > a {
-  border-radius: 0 4px 0 0;
-}
+
+    .nav > li:last-child > a {
+        border-radius: 0 4px 0 0;
+    }
+
 .nav li li a {
-  margin-top: 1px;
+    margin-top: 1px;
 }
+
 .nav li a:first-child:nth-last-child(2):before {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  border: 5px solid transparent;
-  top: 50% ;
-  right:5px;
- }
- /* submenu positioning*/
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    top: 50%;
+    right: 5px;
+}
+/* submenu positioning*/
 .nav ul {
-  position: absolute;
-  white-space: nowrap;
-  border-bottom: 5px solid  blue;
-  z-index: 1;
-  left: -99999em;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: 5px solid blue;
+    z-index: 1;
+    left: -99999em;
 }
+
 .nav > li:hover > ul {
-  left: auto;
-  margin-top: 5px;
-  min-width: 100%;
+    left: auto;
+    margin-top: 5px;
+    min-width: 100%;
 }
+
 .nav > li li:hover > ul {
-  left: 100%;
-  margin-left: 1px;
-  top: -1px;
+    left: 100%;
+    margin-left: 1px;
+    top: -1px;
 }
 /* arrow hover styling */
 .nav > li > a:first-child:nth-last-child(2):before {
-  border-top-color: blue;
+    border-top-color: blue;
 }
+
 .nav > li:hover > a:first-child:nth-last-child(2):before {
-  border: 5px solid transparent;
-  border-bottom-color: blue;
-  margin-top:-5px
+    border: 5px solid transparent;
+    border-bottom-color: blue;
+    margin-top: -5px
 }
+
 .nav li li > a:first-child:nth-last-child(2):before {
-  border-left-color: blue;
-  margin-top: -5px
+    border-left-color: blue;
+    margin-top: -5px
 }
+
 .nav li li:hover > a:first-child:nth-last-child(2):before {
-  border: 5px solid transparent;
-  border-right-color: blue;
-  right: 10px;
-}
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+    border: 5px solid transparent;
+    border-right-color: blue;
+    right: 10px;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+}

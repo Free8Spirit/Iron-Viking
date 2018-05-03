@@ -1,37 +1,50 @@
 ﻿<!DOCTYPE html>
-    <!-- Shared File: Dakota Colton and David Vert Co-Owners/editors of index.html -->
+    <!-- Shared File: Dakota Howard and David Vert Co-Owners/editors of index.html -->
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="sources/css/styles.css" />
-        <title> Iron Viking </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="sources/css/styles.css">
     </head>
     <body>
-      <div>
-        <ul class="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a>
-            <ul>
-              <li><a href="#">Men's</a>
-                <ul>
-                  <li><a href="#">Men's T-Shirts</a></li>
-                  <li><a href="#">Men's Tank Tops</a></li>
-                  <li><a href="#">Men's Pants</a></li>
+      <nav class="navbar navbar-default" id="default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">IRON VIKING</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse">
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Men's</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Women's</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Accessories</a></li>
                 </ul>
               </li>
-              <li><a href="#">Women's</a>
-                <ul>
-                  <li><a href="#">Women's Tops</a></li>
-                  <li><a href="#">Women's Pants</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Headdware</a></li>
             </ul>
-          </li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </body>
 </html>

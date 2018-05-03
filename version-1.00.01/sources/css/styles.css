@@ -466,6 +466,13 @@ div ul {
     }
 }
 
+/*Font faces*/
+
+@font-face {
+    font-family: Viking;
+    src: url(sources/fonts/Norse.otf)
+}
+
 /*Special classes*/
 
 .hide {

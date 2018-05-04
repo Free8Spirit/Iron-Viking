@@ -185,7 +185,9 @@ header .nav-login a {
     font-size: 40px;
     line-height: 50px;
     text-align: center;
+    align-content: center;
     width: 100%;
+    box-sizing: content-box;
 }
 
 /*basic structure for main screen*/
@@ -260,6 +262,36 @@ header .nav-login a {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+/*shop.html styling started here*/
+
+#Men, #Women {
+    text-align: center;
+    width: 45%;
+    margin: 2%;
+    padding: 2px;
+    float: left;
+    border: groove 2px azure;
+}
+
+#MShirts, #MPants, #WShirts, #WPants {
+    text-align: center;
+    width: 90%;
+    margin: inherit;
+}
+
+#Men .content p, #Women .content p {
+    display: inline-flex;
+    border: groove 2px crimson;
+    text-align: center;
+    margin: 2%;
+    align-content: center;
+}
+
+.main-container .nav-content p {
+    display: inline-flex;
+    margin: 2%;
 }
 
 @-webkit-keyframes fade {

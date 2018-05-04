@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="index" href="../../index.html" />
+    <link rel="stylesheet" href="../../sources/css/styles.css" />
+    <title> Buy Meh </title>
+    <script>
+
+        function All() {
+            Men.classList.remove('hide');
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            Women.classList.remove('hide');
+            WShirts.classList.remove('hide');
+            WPants.classList.remove('hide');
+        }
+
+        function MenSection() {
+            Men.classList.remove('hide');
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            Women.classList.add('hide');
+        }
+
+        function WomenSection() {
+            Women.classList.remove('hide');
+            Men.classList.add('hide');
+        }
+
+        function subAll() {
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            WShirts.classList.remove('hide');
+            WPants.classList.remove('hide');
+        }
+
+        function Shirts() {
+            MShirts.classList.remove('hide');
+            WShirts.classList.remove('hide');
+            MPants.classList.add('hide');
+            WPants.classList.add('hide');
+        }
+
+        function Pants() {
+            MPants.classList.remove('hide');
+            WPants.classList.remove('hide');
+            MShirts.classList.add('hide');
+            WShirts.classList.add('hide');
+        }
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="nav-content">
+            <p onclick="All()"> All </p> 
+            <p onclick="MenSection()"> Men </p>
+            <p onclick="WomenSection()"> Women </p>
+        </nav>
+        <section id="Men" class="fade">
+            <h6 onclick="MenSection()"> Mens </h6>
+            <nav class="content">
+                <p onclick="subAll()"> All </p> 
+                <p onclick="Shirts()"> Shirts </p>
+                <p onclick="Pants()"> Pants </p>
+            </nav>
+
+            <div id="MShirts" class="hide fade">
+                shirts
+            </div>
+
+            <div id="MPants" class="hide fade">
+                pants
+            </div>
+        </section>
+
+        <section id="Women" class="fade">
+            <h6 onclick="WomenSection()"> Womens </h6>
+            <nav class="content">
+                <p onclick="subAll()"> All </p> 
+                <p onclick="Shirts()"> Shirts </p>
+                <p onclick="Pants()"> Pants </p>
+            </nav>
+
+            <div id="WShirts" class="hide fade">
+                shirts
+            </div>
+
+            <div id="WPants" class="hide fade">
+                pants
+            </div>
+        </section>
+    </div>
+</body>
+</html>

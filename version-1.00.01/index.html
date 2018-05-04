@@ -7,9 +7,68 @@
         <link rel="shortcut icon" href="sources/pictures/PNG/logo-transparent.png" />
         <title> Iron Viking </title>
         <script>
-            function Sec1() {
-                if (Sec1.classList.contains(''))
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
+            function mySec1() {
+                if (Sec1.classList.contains('hide')) {
+                    Sec1.classList.remove('hide');
+                    Sec2.classList.add('hide');
+                    Sec3.classList.add('hide');
+                    Sec4.classList.add('hide');
+                    Sec5.classList.add('hide');
+                    Sec6.classList.add('hide');
+                }
+            }
+            function mySec2() {
+                if (Sec2.classList.contains('hide')) {
+                    Sec2.classList.remove('hide');
+                    Sec1.classList.add('hide');
+                    Sec3.classList.add('hide');
+                    Sec4.classList.add('hide');
+                    Sec5.classList.add('hide');
+                    Sec6.classList.add('hide');
+                }
+            }
+            function mySec3() {
+                if (Sec3.classList.contains('hide')) {
+                    Sec3.classList.remove('hide');
+                    Sec1.classList.add('hide');
+                    Sec2.classList.add('hide');
+                    Sec4.classList.add('hide');
+                    Sec5.classList.add('hide');
+                    Sec6.classList.add('hide');
+                }
+            }
+            function mySec4() {
+                if (Sec4.classList.contains('hide')) {
+                    Sec4.classList.remove('hide');
+                    Sec1.classList.add('hide');
+                    Sec2.classList.add('hide');
+                    Sec3.classList.add('hide');
+                    Sec5.classList.add('hide');
+                    Sec6.classList.add('hide');
+                }
+            }
+            function mySec5() {
+                if (Sec5.classList.contains('hide')) {
+                    Sec5.classList.remove('hide');
+                    Sec1.classList.add('hide');
+                    Sec2.classList.add('hide');
+                    Sec3.classList.add('hide');
+                    Sec4.classList.add('hide');
+                    Sec6.classList.add('hide');
+                }
+            }
+            function mySec6() {
+                if (Sec6.classList.contains('hide')) {
+                    Sec6.classList.remove('hide');
+                    Sec1.classList.add('hide');
+                    Sec2.classList.add('hide');
+                    Sec3.classList.add('hide');
+                    Sec4.classList.add('hide');
+                    Sec5.classList.add('hide');
+                }
             }
         </script>
     </head>
@@ -135,32 +194,32 @@
             </section>
             <section class="central-pain">
                 <div class="main-pain">
-                    <div class="Sec1">
-                        hi
+                    <div id="Sec1" class="fade">
+                        <p class="Sec1"> Sec 1 </p>
                     </div>
-                    <div class="Sec2">
-                        hi
+                    <div id="Sec2" class="hide fade">
+                        <p class="Sec2"> Sec 2 </p>
                     </div>
-                    <div class="Sec3">
-                        hi
+                    <div id="Sec3" class="hide fade">
+                        <p class="Sec3"> Sec 3 </p>
                     </div>
-                    <div class="Sec4">
-                        hi
+                    <div id="Sec4" class="hide fade">
+                        <p class="Sec4"> Sec 4 </p>
                     </div>
-                    <div class="Sec5">
-                        hi
+                    <div id="Sec5" class="hide fade">
+                        <p class="Sec5"> Sec 5 </p>
                     </div>
-                    <div class="Sec6">
-                        hi
+                    <div id="Sec6" class="hide fade">
+                        <p class="Sec6"> Sec 6 </p>
                     </div>
                 </div>
                 <div class="sub-pain">
-                    <p> sec 1 </p>
-                    <p> sec 2 </p>
-                    <p> sec 3 </p>
-                    <p> sec 4 </p>
-                    <p> sec 5 </p>
-                    <p> sec 6 </p>
+                    <p onclick="mySec1()"> sec 1 </p>
+                    <p onclick="mySec2()"> sec 2 </p>
+                    <p onclick="mySec3()"> sec 3 </p>
+                    <p onclick="mySec4()"> sec 4 </p>
+                    <p onclick="mySec5()"> sec 5 </p>
+                    <p onclick="mySec6()"> sec 6 </p>
                 </div>
             </section>
             <section class="right-pain">

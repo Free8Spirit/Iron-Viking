@@ -193,9 +193,11 @@ header .nav-login a {
 .left-pain, .central-pain, .right-pain {
     float: left;
     width: 15%;
-    border: 2px groove azure;
+    border: 2px groove #dac18f;
     margin: 2%;
     min-height: 300px;
+    max-height: 80%;
+    overflow: auto;
     box-sizing: content-box;
 }
 
@@ -206,7 +208,12 @@ header .nav-login a {
 .central-pain .sub-pain, .central-pain .main-pain div {
     text-align: center;
     width: 100%;
-    margin: 2px;
+    margin: 2%;
+}
+
+.central-pain .main-pain {
+    border: 3px groove #dac18f;
+    margin: 2%;
 }
 
 .central-pain .sub-pain p {

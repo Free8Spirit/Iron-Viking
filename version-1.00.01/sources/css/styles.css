@@ -523,3 +523,10 @@ div ul {
 .hide {
     display: none;
 }
+
+.solo {
+    text-align: center;
+    width: auto;
+    min-width: 90%;
+    float: none;
+}

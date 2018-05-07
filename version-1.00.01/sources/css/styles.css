@@ -239,14 +239,20 @@ header .nav-login a {
 }
 
 /* Hide the images by default */
-.left-pain .slideshow-container .mySlides {
+.left-pain .slideshow-container .mySlides1, .left-pain .slideshow-container .mySlides2, .left-pain .slideshow-container .mySlides3 {
     box-sizing: content-box;
     display: none;
     width: 100%;
 }
 
+/*.left-pain .slideshow-container .mySlides {
+    box-sizing: content-box;
+    display: none;
+    width: 100%;
+}*/
+
 /* Caption text */
-.left-pain .slideshow-container .mySlides .text {
+.left-pain .slideshow-container .mySlides1 .text, .left-pain .slideshow-container .mySlides2 .text, .left-pain .slideshow-container .mySlides3 .text {
     color: black;
     text-shadow: 0px 0px 2.5px crimson;
     font-size: 45%;
@@ -257,10 +263,25 @@ header .nav-login a {
     background-color: rgba(0, 255, 29, 0.25);
 }
 
+/*.left-pain .slideshow-container .mySlides .text {
+    color: black;
+    text-shadow: 0px 0px 2.5px crimson;
+    font-size: 45%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 255, 29, 0.25);
+}*/
+
 /*Image size*/
-.left-pain .slideshow-container .mySlides img {
+.left-pain .slideshow-container .mySlides1 img, .left-pain .slideshow-container .mySlides2 img, .left-pain .slideshow-container .mySlides3 img {
     width: 100%;
 }
+
+/*.left-pain .slideshow-container .mySlides img {
+    width: 100%;
+}*/
 
 /* Fading animation */
 .fade {
@@ -525,8 +546,10 @@ div ul {
 }
 
 .solo {
+    align-content: center;
     text-align: center;
     width: auto;
+    margin: auto;
     min-width: 90%;
     float: none;
 }

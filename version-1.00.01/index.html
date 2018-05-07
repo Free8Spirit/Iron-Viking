@@ -7,8 +7,55 @@
         <link rel="shortcut icon" href="sources/pictures/PNG/logo-transparent.png" />
         <title> Iron Viking </title>
         <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
+
+            var slideIndex = [1, 1, 1];
+            var slideId = ["mySlides1", "mySlides2","mySlides3"];
+            showSlides(1, 1, 1);
+
+            function showSlides(n, no, nom) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        
+            //function showSlides1(n) {
+            //    var i;
+            //    var slides = document.getElementsByClassName("mySlides1");
+            //    if (n > slides.length) { slideIndex = 1 }
+            //    if (n < 1) { slideIndex = slides.length }
+            //    for (i = 0; i < slides.length; i++) {
+            //        slides[i].style.display = "none";
+            //    }
+            //    slides[slideIndex - 1].style.display = "block";
+            //}
+
+            //function showSlides2(n) {
+            //    var i;
+            //    var slides = document.getElementsByClassName("mySlides2");
+            //    if (n > slides.length) { slideIndex = 1 }
+            //    if (n < 1) { slideIndex = slides.length }
+            //    for (i = 0; i < slides.length; i++) {
+            //        slides[i].style.display = "none";
+            //    }
+            //    slides[slideIndex - 1].style.display = "block";
+            //}
+
+            //function showSlides3(n) {
+            //    var i;
+            //    var slides = document.getElementsByClassName("mySlides3");
+            //    if (n > slides.length) { slideIndex = 1 }
+            //    if (n < 1) { slideIndex = slides.length }
+            //    for (i = 0; i < slides.length; i++) {
+            //        slides[i].style.display = "none";
+            //    }
+            //    slides[slideIndex - 1].style.display = "block";
+            //}
 
             function mySec1() {
                 if (Sec1.classList.contains('hide')) {
@@ -72,7 +119,7 @@
             }
         </script>
     </head>
-    <body>
+    <body onmousewheel="interval()">
         <!--<header>
             <nav>
                 <div class="main-wrapper">
@@ -141,54 +188,54 @@
         </nav>
         <section class="main-container">
             <section class="left-pain">
-                <div class="slideshow-container">
-                    <div class="mySlides fade" style="display: block;">
+                <div id="slideshow-container" class="slideshow-container">
+                    <div class="mySlides1 fade" style="display: block;">
                         <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                        <div class="text"> Caption 1 </div>
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="mySlides1 fade">
                         <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                        <div class="text"> Caption 2 </div>
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="mySlides1 fade">
                         <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
-                    </div>
-                </div>
-
-                <div class="slideshow-container">
-                    <div class="mySlides fade" style="display: block;">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                        <div class="text"> Caption 3 </div>
                     </div>
                 </div>
 
                 <div class="slideshow-container">
-                    <div class="mySlides fade" style="display: block;">
+                    <div class="mySlides2 fade" style="display: block;">
                         <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                        <div class="text"> Caption 1 </div>
                     </div>
 
-                    <div class="mySlides fade">
+                    <div class="mySlides2 fade">
                         <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                        <div class="text"> Caption 2 </div>
                     </div>
 
-                    <div class="mySlides fade">
-                        <a href="index.html" rel="content"><img src="img" alt="click me" /></a>
-                        <div class="text"> Caption </div>
+                    <div class="mySlides2 fade">
+                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Caption 3 </div>
+                    </div>
+                </div>
+
+                <div class="slideshow-container">
+                    <div class="mySlides3 fade" style="display: block;">
+                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Caption 1 </div>
+                    </div>
+
+                    <div class="mySlides3 fade">
+                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Caption 2 </div>
+                    </div>
+
+                    <div class="mySlides3 fade">
+                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Caption 3 </div>
                     </div>
                 </div>
             </section>

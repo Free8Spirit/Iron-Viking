@@ -1,0 +1,308 @@
+/*Reset*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+  background-color: #474853;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #25274d;
+}
+.info p{
+  color: blue;
+}
+.links a{
+  color: white;
+  padding-right: 7px;
+}
+.links a:hover{
+  color: blue;
+  padding-right: 7px;
+  text-decoration: none;
+}
+
+main h3{
+  color: #29648a;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.backimg{
+  position: relative;
+  left: 325px;
+}
+#default{
+  min-height: 75px;
+  background-color: #aaabb8;
+  border: none;
+}
+
+
+.dropdown-menu{
+  background-color: black;
+}
+.dropdown-menu li > a{
+  color: white;
+}
+.dropdown-menu li:hover > a {
+  background-color: black;
+  color:blue;
+}
+
+.nav a{
+  display:block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+
+nav {
+  display: block;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.nav a {
+  display:block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  position: relative;
+}
+.nav{
+  vertical-align: top;
+  display: inline-block;
+  box-shadow:
+    1px -1px -1px 1px #000,
+    -1px 1px -1px 1px #fff,
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+.nav li {
+  position: relative;
+}
+.nav > li {
+  float: left;
+  border-bottom: 4px #aaa solid;
+  margin-right: 1px;
+}
+.nav > li > a {
+  margin-bottom: 1px;
+  box-shadow: inset 0 2em .33em -0.5em #555;
+}
+.nav > li:hover,
+.nav > li:hover > a {
+  border-bottom-color: blue;
+}
+.navbar-collapse .navbar-nav li a{
+  color: white;
+}
+.navbar-collapse .navbar-nav li a:hover {
+  background-color: black;
+  color:blue;
+}
+.caret{
+  color: blue;
+}
+.navbar-header .navbar-brand{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 30px;
+  color: black;
+}
+.navbar-header .navbar-brand:hover{
+  background-color: black;
+  color:blue;
+}
+
+.navbar-header .slogan{
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  top: 2px;
+  left: 75px;
+  color: black;
+  font-size: 20px;
+}
+
+.navbar-nav .dropdown .dropdown-menu li{
+  color: white;
+  background: blue;
+  font-size: 17px;
+
+}
+
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a{
+  color: white;
+}
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover {
+  background-color: black;
+  color: blue;
+}
+
+.item img{
+  position: relative;
+  left: 450px;
+}
+
+.item #fitness-apparel{
+  position: relative;
+  left: 310px;
+}
+.item #fitness-apparelH3{
+  color: black;
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  left: -150px;
+}
+
+.item #fashionable{
+  position: relative;
+  left: 310px;
+}
+
+.item h3{
+  font-family: 'Alfa Slab One', cursive;
+  padding-top: 5px;
+  position: relative;
+  left: -2px;
+  font-size: 40px;
+  color: black;
+}
+
+.row .column img{
+  position: relative;
+  left: 100px;
+  border-radius: 8px;
+  border-color: black;
+  max-width: 100%;
+  height: auto;
+}
+.row #mens-cloathing img{
+  margin-left: 10px;
+}
+
+.row #womens-cloathing img{
+  margin-left: 10px;
+}
+
+.row #headwear img{
+  margin-left: -60px;
+}
+
+.row .column #menh2{
+  color: #29648a;
+  font-size: 17px;
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  padding-top: 20px;
+  left: 230px;
+}
+.row .column #womenh2{
+  color: #29648a;
+  font-size: 17px;
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  padding-top: 20px;
+  left: 200px;
+}
+.row .column #accessoriesh2{
+  color: #29648a;
+  font-size: 17px;
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  padding-top: 20px;
+  left: 130px;
+}
+
+.carousel{
+  margin-top: -10px;
+  background-color: #464866;
+}
+/*Special classes*/
+
+.hide {
+    display: none;
+}
+@media screen and (max-width: 480px){
+    .navbar-header .slogan{
+      display: none;}
+      .item img{
+        position: relative;
+        left: 30px;
+      }
+      .item h3{
+        position: relative;
+        font-size: 30px;
+        left: 12px;
+      }
+}
+@media screen and (max-width: 780px){
+  .navbar-header .slogan{
+    display: none;}
+    .item img{
+      position: relative;
+      left: 30px;
+    }
+    .item h3{
+      position: relative;
+      font-size: 30px;
+      left: 12px;
+    }
+}
+@media screen and (max-width: 1024px){
+
+}

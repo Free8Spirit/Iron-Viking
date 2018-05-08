@@ -8,54 +8,58 @@
         <title> Iron Viking </title>
         <script>
 
-            var slideIndex = [1, 1, 1];
-            var slideId = ["mySlides1", "mySlides2","mySlides3"];
-            showSlides(1, 1, 1);
+            var slideIndex = 0;
+            showSlides1();
 
-            function showSlides(n, no, nom) {
+            //function showSlides() {
+            //    var i;
+            //    var slides = document.getElementsByClassName("mySlides1");
+            //    for (i = 0; i < slides.length; i++) {
+            //        slides[i].style.display = "none";
+            //    }
+            //    slideIndex++;
+            //    if (slideIndex > slides.length) { slideIndex = 1 }
+            //    slides[slideIndex - 1].style.display = "block";
+            //    setTimeout(showSlides, 2000); // Change image every 2 seconds
+            //}
+
+            function showSlides1(n) {
                 var i;
-                var slides = document.getElementsByClassName("mySlides");
+                var slides = document.getElementsByClassName("mySlides1");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
                 slideIndex++;
                 if (slideIndex > slides.length) { slideIndex = 1 }
                 slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                setTimeout(showSlides2, 3000);
             }
-        
-            //function showSlides1(n) {
-            //    var i;
-            //    var slides = document.getElementsByClassName("mySlides1");
-            //    if (n > slides.length) { slideIndex = 1 }
-            //    if (n < 1) { slideIndex = slides.length }
-            //    for (i = 0; i < slides.length; i++) {
-            //        slides[i].style.display = "none";
-            //    }
-            //    slides[slideIndex - 1].style.display = "block";
-            //}
 
-            //function showSlides2(n) {
-            //    var i;
-            //    var slides = document.getElementsByClassName("mySlides2");
-            //    if (n > slides.length) { slideIndex = 1 }
-            //    if (n < 1) { slideIndex = slides.length }
-            //    for (i = 0; i < slides.length; i++) {
-            //        slides[i].style.display = "none";
-            //    }
-            //    slides[slideIndex - 1].style.display = "block";
-            //}
+            function showSlides2(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides2");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides3, 3000);
+            }
 
-            //function showSlides3(n) {
-            //    var i;
-            //    var slides = document.getElementsByClassName("mySlides3");
-            //    if (n > slides.length) { slideIndex = 1 }
-            //    if (n < 1) { slideIndex = slides.length }
-            //    for (i = 0; i < slides.length; i++) {
-            //        slides[i].style.display = "none";
-            //    }
-            //    slides[slideIndex - 1].style.display = "block";
-            //}
+            function showSlides3(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides3");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides1, 3000);
+            }
 
             function mySec1() {
                 if (Sec1.classList.contains('hide')) {
@@ -119,7 +123,7 @@
             }
         </script>
     </head>
-    <body onmousewheel="interval()">
+    <body onload="showSlides1(0)">
         <!--<header>
             <nav>
                 <div class="main-wrapper">
@@ -190,52 +194,52 @@
             <section class="left-pain">
                 <div id="slideshow-container" class="slideshow-container">
                     <div class="mySlides1 fade" style="display: block;">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 1 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec1 Caption 1 </div>
                     </div>
 
                     <div class="mySlides1 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 2 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec1 Caption 2 </div>
                     </div>
 
                     <div class="mySlides1 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 3 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec1 Caption 3 </div>
                     </div>
                 </div>
 
                 <div class="slideshow-container">
                     <div class="mySlides2 fade" style="display: block;">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 1 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec2 Caption 1 </div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 2 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec2 Caption 2 </div>
                     </div>
 
                     <div class="mySlides2 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 3 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec2 Caption 3 </div>
                     </div>
                 </div>
 
                 <div class="slideshow-container">
                     <div class="mySlides3 fade" style="display: block;">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 1 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec3 Caption 1 </div>
                     </div>
 
                     <div class="mySlides3 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 2 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec3 Caption 2 </div>
                     </div>
 
                     <div class="mySlides3 fade">
-                        <a href="index.html" rel="content"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
-                        <div class="text"> Caption 3 </div>
+                        <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
+                        <div class="text"> Sec3 Caption 3 </div>
                     </div>
                 </div>
             </section>

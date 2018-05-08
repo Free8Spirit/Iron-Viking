@@ -404,7 +404,7 @@ div ul {
 .nav {
     vertical-align: top;
     display: inline-block;
-    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px blue;
+    box-shadow: 1px 0px 0px 1px #000, 0px 1px 0px 1px #fff, 0 0 6px 3px blue;
     border-radius: 6px;
 }
 

@@ -206,6 +206,9 @@ header .nav-login a {
     max-height: 80%;
     overflow: auto;
     box-sizing: content-box;
+    opacity: .58;
+    background-image: url(../pictures/PNG/logo-transparent.png);
+    background-size: contain;
 }
 
 .central-pain {
@@ -252,14 +255,14 @@ header .nav-login a {
 
 /* Caption text */
 .slideshow-container .mySlides1 .text, .slideshow-container .mySlides2 .text, .slideshow-container .mySlides3 .text, .slideshow-container .mySlides4 .text, .slideshow-container .mySlides5 .text, .slideshow-container .mySlides6 .text {
-    color: black;
+    color: azure;
     text-shadow: 0px 0px 2.5px crimson;
     font-size: 45%;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 255, 29, 0.25);
+    /*background-color: rgba(0, 255, 29, 0.25);*/
 }
 
 /*.left-pain .slideshow-container .mySlides .text {
@@ -519,6 +522,11 @@ footer {
     background-color: black;
 }
 
+footer div {
+    text-align: center;
+    margin: 5px;
+}
+
 .info p {
     color: blue;
 }
@@ -528,11 +536,11 @@ footer {
     padding-right: 7px;
 }
 
-    .links a:hover {
-        color: blue;
-        padding-right: 7px;
-        text-decoration: none;
-    }
+.links a:hover {
+    color: blue;
+    padding-right: 7px;
+    text-decoration: none;
+}
 
 main h3 {
     text-align: center;
@@ -704,12 +712,20 @@ nav ul {
     padding: 1%;
 }
 
-.navbar-nav {
+.navbar-form {
+    padding: 0px;
+}
 
+.navbar-form .form-group, .navbar-form .btn {
+    float: left;
+}
+
+.navbar-form {
+    float: right;
+    margin: 5px;
 }
 
 /*Media quires*/
-
 @media screen and (max-width: 480px) {
     .navbar-header .slogan {
         display: none;
@@ -766,6 +782,6 @@ nav ul {
     text-align: center;
     width: auto;
     margin: auto;
-    min-width: 90%;
+    min-width: 95%;
     float: none;
 }

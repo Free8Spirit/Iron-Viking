@@ -7,7 +7,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
+        <link rel="contact" href="contact.html">
+        <link rel="about me page" href="aboutme.html">
         <link rel="shortcut icon" href="logo-transparent.png" />
     </head>
     <body>
@@ -22,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">IRON VIKING</a>
+            <a class="navbar-brand" href="index.html">IRON VIKING</a>
             <p class="slogan">Live Unafraid, Die Strong</p>
           </div>
 
@@ -58,8 +61,8 @@
                   <li role="separator" class="divider"></li>
                   <li><a href="#">Accessories</a></li>
                 </ul>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="aboutme.html">Meet Me</a></li>
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -77,7 +80,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item item active">
-            <img src="logo-transparent.png" alt="..." width="450px" height="450px">
+            <img src="logo-transparent.png" alt="..." width="450px" height="450px" id="logo-transparent">
             <div class="carousel-caption">
               <h3>Live Unafraid, Die Strong</h3>
             </div>
@@ -107,26 +110,72 @@
       </div>
       <main>
         <h3>Iron Viking Apparel</h3>
-        <div class="row">
-          <div class="column" id="mens-cloathing">
-            <img src="gym-clothing.jpg" alt="mens cloathing" style="width: 300px" style="height: 300px">
-            <h2 id="menh2">Men's</h2>
+        <h2>The Iron Viking brand is here and I plan to outfit everyone in the best gym gear around!</h2>
+        <div class="img-container">
+          <div class="row">
+            <div class="column" id="mens-cloathing">
+              <a href="shopping.html"><img src="gym-clothing.jpg" alt="mens cloathing" style="width: 300px" style="height: 300px" class="mens-cloathing"></a>
+              <h2 id="menh2">Men's</h2>
+            </div>
+            <div class="column" id="womens-cloathing">
+              <a href="shopping.html"><img src="sport--fitness.jpg" alt="womens cloathing" style="width: 230px" style="height: 230px" class="womens-cloathing"></a>
+              <h2 id="womenh2">Women's</h2>
+            </div>
+            <div class="column" id="headwear">
+              <a href="shopping.html"><img src="hats.jpg" alt="headwear" style="width: 250px" style="height:250px" class="headwear"></a>
+              <h2 id="accessoriesh2">Accessories</h2>
+            </div>
           </div>
-          <div class="column" id="womens-cloathing">
-            <img src="sport--fitness.jpg" alt="womens cloathing" style="width: 230px" style="height: 230px">
-            <h2 id="womenh2">Women's</h2>
+        </div>
+        <div class="custserv-container">
+          <div class="leftcustserv-container">
+            <h1>Join Our Newsletter</h1>
+            <div class="contact-container">
+              <form action="mailto:ironvikingceo@gmail.com" method="post" enctype="text/plain">
+                <div class="field">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="col-25">
+                    <label for="eMail">Email Address</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="eMail" name="email" placeholder="Your email..">
+                  </div>
+                </div>
+                <div class="field">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="column" id="headwear">
-            <img src="hats.jpg" alt="headwear" style="width: 250px" style="height:250px">
-            <h2 id="accessoriesh2">Accessories</h2>
+          <div class="rightcustserv-container">
+            <h1>Customer Service</h1>
+            <p>Contact Us: (816) 974-7510</p>
+            <a href="https://www.instagram.com/ironvikingceo/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ironvikingapparel/?modal=admin_todo_tour" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCTmHUwIkQoQSxRINs6waVog" target="_blank"><i class="fa fa-youtube"></i></a>
           </div>
         </div>
       </main>
       <footer>
         <div class="links">
           <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="aboutme.html">About</a>
+          <a href="contact.html">Contact</a>
         </div>
         <div class="info">
           <p>(816) 974-7510 | Copyright 2018 | Iron Viking Apparel</p>

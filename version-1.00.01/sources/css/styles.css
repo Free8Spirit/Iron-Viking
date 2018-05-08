@@ -704,6 +704,10 @@ nav ul {
     padding: 1%;
 }
 
+.navbar-nav {
+
+}
+
 /*Media quires*/
 
 @media screen and (max-width: 480px) {

@@ -230,8 +230,8 @@ header .nav-login a {
     margin: 5%;
 }
 
-/* Slideshow container */
-.left-pain .slideshow-container {
+/* Slideshow containers */
+.left-pain .slideshow-container, .right-pain .slideshow-container {
     box-sizing: content-box;
     width: 80%;
     position: relative;
@@ -239,7 +239,7 @@ header .nav-login a {
 }
 
 /* Hide the images by default */
-.left-pain .slideshow-container .mySlides1, .left-pain .slideshow-container .mySlides2, .left-pain .slideshow-container .mySlides3 {
+.slideshow-container .mySlides1, .slideshow-container .mySlides2, .slideshow-container .mySlides3 {
     box-sizing: content-box;
     display: none;
     width: 100%;
@@ -252,7 +252,7 @@ header .nav-login a {
 }*/
 
 /* Caption text */
-.left-pain .slideshow-container .mySlides1 .text, .left-pain .slideshow-container .mySlides2 .text, .left-pain .slideshow-container .mySlides3 .text {
+.slideshow-container .mySlides1 .text, .slideshow-container .mySlides2 .text, .slideshow-container .mySlides3 .text {
     color: black;
     text-shadow: 0px 0px 2.5px crimson;
     font-size: 45%;
@@ -275,7 +275,7 @@ header .nav-login a {
 }*/
 
 /*Image size*/
-.left-pain .slideshow-container .mySlides1 img, .left-pain .slideshow-container .mySlides2 img, .left-pain .slideshow-container .mySlides3 img {
+.slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img {
     width: 100%;
 }
 

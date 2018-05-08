@@ -591,6 +591,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 .nav a {
@@ -673,6 +674,34 @@ nav ul {
 .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover {
     background-color: black;
     color: blue;
+}
+
+/*Integrating bootstrap in progress*/
+
+.container-fluid {
+    width: 100%;
+}
+
+.navbar-header {
+    float: left;
+    margin: 12px;
+    position: relative;
+    right: 20px;
+}
+
+.navbar-header p {
+    margin: 5px;
+}
+
+.navbar-header a {
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+    margin: 5px;
+}
+
+.navbar {
+    padding: 1%;
 }
 
 /*Media quires*/

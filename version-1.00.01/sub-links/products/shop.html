@@ -55,31 +55,49 @@
         function subAllM() {
             MShirts.classList.remove('hide');
             MPants.classList.remove('hide');
+            MOther.classList.remove('hide');
         }
 
         function ShirtsM() {
             MShirts.classList.remove('hide');
             MPants.classList.add('hide');
+            MOther.classList.add('hide');
         }
 
         function PantsM() {
             MPants.classList.remove('hide');
             MShirts.classList.add('hide');
+            MOther.classList.add('hide');
+        }
+
+        function OtherM() {
+            MShirts.classList.add('hide');
+            MPants.classList.add('hide');
+            MOther.classList.remove('hide');
         }
 
         function subAllW() {
             WShirts.classList.remove('hide');
             WPants.classList.remove('hide');
+            WOther.classList.remove('hide');
         }
 
         function ShirtsW() {
             WShirts.classList.remove('hide');
             WPants.classList.add('hide');
+            WOther.classList.add('hide');
         }
 
         function PantsW() {
             WPants.classList.remove('hide');
             WShirts.classList.add('hide');
+            WOther.classList.add('hide');
+        }
+
+        function OtherW() {
+            WShirts.classList.add('hide');
+            WPants.classList.add('hide');
+            WOther.classList.remove('hide');
         }
 
     </script>
@@ -112,41 +130,61 @@
     </nav>
     <div class="main-container">
         <nav class="nav-content">
-            <p onclick="All()"> All </p> 
+            <p onclick="All()"> Both </p> 
             <p onclick="MenSection(); Sizer()"> Men </p>
             <p onclick="WomenSection()"> Women </p>
         </nav>
         <section id="Men" class="fade">
             <h6 onclick="MenSection()"> Mens </h6>
             <nav class="content">
-                <p onclick="subAllM()"> All </p> 
+                <p onclick="subAllM()"> All </p>
                 <p onclick="ShirtsM()"> Shirts </p>
                 <p onclick="PantsM()"> Pants </p>
+                <p onclick="OtherM()"> Other </p>
             </nav>
 
             <div id="MShirts" class="hide fade">
-                shirts
+                <img src="all/images(2).jpg" alt="img" />
+                <img src="all/tshirts-vikings.jpg" alt="img" />
+                <img src="all/images(7).jpg" alt="img" />
+                <img src="all/images(5).jpg" alt="img" />
+                <img src="all/images(4).jpg" alt="img" />
+                <img src="all/viking-till-valhalla-t-shirt-gods-rage.jpg" alt="img" />
             </div>
 
             <div id="MPants" class="hide fade">
                 pants
+            </div>
+
+            <div id="MOther" class="hide fade">
+                <img src="all/viking-wedding-rings-60397-rustic-braided-ring-silver-copper-viking-mens-ring-two-tone-of-viking-wedding-rings.jpg" alt="img" />
+                <img src="all/il_340x270.1428556690_pzov.jpg" alt="img" />
             </div>
         </section>
 
         <section id="Women" class="fade">
             <h6 onclick="WomenSection()"> Womens </h6>
             <nav class="content">
-                <p onclick="subAllW()"> All </p> 
+                <p onclick="subAllW()"> All </p>
                 <p onclick="ShirtsW()"> Shirts </p>
                 <p onclick="PantsW()"> Pants </p>
+                <p onclick="OtherW()"> Other </p>
             </nav>
 
             <div id="WShirts" class="hide fade">
-                shirts
+                <img src="all/images(1).jpg" alt="img" />
+                <img src="all/images.jpg" alt="img" />
+                <img src="all/images(6).jpg" alt="img" />
+                <img src="all/images(2).jpg" alt="img" />
             </div>
 
             <div id="WPants" class="hide fade">
                 pants
+            </div>
+
+            <div id="WOther" class="hide fade">
+                <img src="all/il_340x270.1435331144_2pad.jpg" alt="img" />
+                <img src="all/il_340x270.1428556690_pzov.jpg" alt="img" />
             </div>
         </section>
     </div>

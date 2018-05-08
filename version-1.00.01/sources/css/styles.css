@@ -304,7 +304,7 @@ header .nav-login a {
     border: groove 2px azure;
 }
 
-#MShirts, #MPants, #WShirts, #WPants {
+#MShirts, #MPants, #MOther, #WShirts, #WPants, #WOther {
     text-align: center;
     width: 90%;
     margin: inherit;
@@ -316,6 +316,12 @@ header .nav-login a {
     text-align: center;
     margin: 2%;
     align-content: center;
+}
+
+#Men img, #Women img {
+    width: 45px;
+    height: 45px;
+    margin: 2%;
 }
 
 .main-container .nav-content p {

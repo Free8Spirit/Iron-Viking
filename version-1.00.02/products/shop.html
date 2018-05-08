@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="index" href="../../index.html" />
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title> Buy Meh </title>
+    <script>
+
+        //function Sizer() {
+        //    if (Men.classList.contains('solo')) {
+        //        Men.classList.remove('solo');
+        //    } else {
+        //        Men.classList.add('solo');
+        //    }
+
+        //    if (Women.classList.contains('solo')) {
+        //        Women.classList.remove('solo');
+        //    } else {
+        //        Women.classList.add('solo');
+        //    }
+        //}
+
+        function All() {
+            Men.classList.remove('hide');
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            Women.classList.remove('hide');
+            WShirts.classList.remove('hide');
+            WPants.classList.remove('hide');
+            Men.classList.remove('solo');
+            Women.classList.remove('solo');
+        }
+
+        function MenSection() {
+            Men.classList.remove('hide');
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            Women.classList.add('hide');
+            Men.classList.add('solo');
+            Women.classList.remove('solo');
+        }
+
+        function WomenSection() {
+            Women.classList.remove('hide');
+            WShirts.classList.remove('hide');
+            WPants.classList.remove('hide');
+            Men.classList.add('hide');
+            Men.classList.remove('solo');
+            Women.classList.add('solo');
+        }
+
+        function subAllM() {
+            MShirts.classList.remove('hide');
+            MPants.classList.remove('hide');
+            MOther.classList.remove('hide');
+        }
+
+        function ShirtsM() {
+            MShirts.classList.remove('hide');
+            MPants.classList.add('hide');
+            MOther.classList.add('hide');
+        }
+
+        function PantsM() {
+            MPants.classList.remove('hide');
+            MShirts.classList.add('hide');
+            MOther.classList.add('hide');
+        }
+
+        function OtherM() {
+            MShirts.classList.add('hide');
+            MPants.classList.add('hide');
+            MOther.classList.remove('hide');
+        }
+
+        function subAllW() {
+            WShirts.classList.remove('hide');
+            WPants.classList.remove('hide');
+            WOther.classList.remove('hide');
+        }
+
+        function ShirtsW() {
+            WShirts.classList.remove('hide');
+            WPants.classList.add('hide');
+            WOther.classList.add('hide');
+        }
+
+        function PantsW() {
+            WPants.classList.remove('hide');
+            WShirts.classList.add('hide');
+            WOther.classList.add('hide');
+        }
+
+        function OtherW() {
+            WShirts.classList.add('hide');
+            WPants.classList.add('hide');
+            WOther.classList.remove('hide');
+        }
+
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default" id="default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">IRON VIKING</a>
+                <p class="slogan">Live Unafraid, Die Strong</p>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <nav class="nav-content">
+            <p onclick="All()"> Both </p> 
+            <p onclick="MenSection(); Sizer()"> Men </p>
+            <p onclick="WomenSection()"> Women </p>
+        </nav>
+        <section id="Men" class="fade">
+            <h6 onclick="MenSection()"> Mens </h6>
+            <nav class="content">
+                <p onclick="subAllM()"> All </p>
+                <p onclick="ShirtsM()"> Shirts </p>
+                <p onclick="PantsM()"> Pants </p>
+                <p onclick="OtherM()"> Other </p>
+            </nav>
+
+            <div id="MShirts" class="hide fade">
+                <img src="all/images(2).jpg" alt="img" />
+                <img src="all/tshirts-vikings.jpg" alt="img" />
+                <img src="all/images(7).jpg" alt="img" />
+                <img src="all/images(5).jpg" alt="img" />
+                <img src="all/images(4).jpg" alt="img" />
+                <img src="all/viking-till-valhalla-t-shirt-gods-rage.jpg" alt="img" />
+            </div>
+
+            <div id="MPants" class="hide fade">
+                pants
+            </div>
+
+            <div id="MOther" class="hide fade">
+                <img src="all/viking-wedding-rings-60397-rustic-braided-ring-silver-copper-viking-mens-ring-two-tone-of-viking-wedding-rings.jpg" alt="img" />
+                <img src="all/il_340x270.1428556690_pzov.jpg" alt="img" />
+            </div>
+        </section>
+
+        <section id="Women" class="fade">
+            <h6 onclick="WomenSection()"> Womens </h6>
+            <nav class="content">
+                <p onclick="subAllW()"> All </p>
+                <p onclick="ShirtsW()"> Shirts </p>
+                <p onclick="PantsW()"> Pants </p>
+                <p onclick="OtherW()"> Other </p>
+            </nav>
+
+            <div id="WShirts" class="hide fade">
+                <img src="all/images(1).jpg" alt="img" />
+                <img src="all/images.jpg" alt="img" />
+                <img src="all/images(6).jpg" alt="img" />
+                <img src="all/images(2).jpg" alt="img" />
+            </div>
+
+            <div id="WPants" class="hide fade">
+                pants
+            </div>
+
+            <div id="WOther" class="hide fade">
+                <img src="all/il_340x270.1435331144_2pad.jpg" alt="img" />
+                <img src="all/il_340x270.1428556690_pzov.jpg" alt="img" />
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="shop.html">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="info">
+            <p>(816) 974-7510 | Copyright 2018 | Iron Viking Apparel</p>
+        </div>
+    </footer>
+</body>
+</html>

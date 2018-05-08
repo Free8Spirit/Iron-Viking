@@ -1,0 +1,793 @@
+/*Reset*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 25%;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+/*Reset Complete...Restyling*/
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: olivedrab;
+    background-color: #403f45;
+}
+
+footer {
+    clear: both;
+    width: auto;
+    text-align: center;
+}
+
+/*.main-wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}*/
+
+header nav {
+    width: 100%;
+    height: 60px;
+    background-color: azure;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    line-height: 63px;
+}
+
+header .nav-login {
+    float: right;
+}
+
+header .nav-login form {
+    float: left;
+    padding: 15px 0px;
+}
+
+header .nav-login form input {
+    float: left;
+    width: 140px;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: #ccc;
+    line-height: 30px;
+}
+
+header .nav-login form button {
+    float: left;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+header .nav-login form button:hover {
+    background-color: #ccc;
+}
+
+header .nav-login a {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: azure;
+    font-size: 16px;
+    line-height: 63px;
+    cursor: pointer;
+}
+
+.main-container {
+    padding-top: 40px;
+    line-height: 50px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+/*basic structure for main screen*/
+
+.left-pain, .central-pain, .right-pain {
+    float: left;
+    width: 15%;
+    border: 2px groove #dac18f;
+    margin: 2%;
+    min-height: 300px;
+    max-height: 80%;
+    overflow: auto;
+    box-sizing: content-box;
+    opacity: .58;
+    background-image: url(../pictures/PNG/logo-transparent.png);
+    background-size: contain;
+}
+
+.central-pain {
+    width: 55%;
+}
+
+.central-pain .sub-pain, .central-pain .main-pain div {
+    text-align: center;
+    width: 98%;
+    margin: 2%;
+}
+
+.central-pain .main-pain {
+    border: 3px groove #dac18f;
+    margin: 2%;
+}
+
+.central-pain .sub-pain button {
+    display: inline;
+    width: auto;
+    margin: 5%;
+}
+
+/* Slideshow containers */
+.left-pain .slideshow-container, .right-pain .slideshow-container {
+    box-sizing: content-box;
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides1, .slideshow-container .mySlides2, .slideshow-container .mySlides3, .slideshow-container .mySlides4, .slideshow-container .mySlides5, .slideshow-container .mySlides6 {
+    box-sizing: content-box;
+    display: none;
+    width: 100%;
+}
+
+/*.left-pain .slideshow-container .mySlides {
+    box-sizing: content-box;
+    display: none;
+    width: 100%;
+}*/
+
+/* Caption text */
+.slideshow-container .mySlides1 .text, .slideshow-container .mySlides2 .text, .slideshow-container .mySlides3 .text, .slideshow-container .mySlides4 .text, .slideshow-container .mySlides5 .text, .slideshow-container .mySlides6 .text {
+    color: azure;
+    text-shadow: 0px 0px 2.5px crimson;
+    font-size: 45%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    /*background-color: rgba(0, 255, 29, 0.25);*/
+}
+
+/*.left-pain .slideshow-container .mySlides .text {
+    color: black;
+    text-shadow: 0px 0px 2.5px crimson;
+    font-size: 45%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 255, 29, 0.25);
+}*/
+
+/*Image size*/
+.slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img, .slideshow-container .mySlides4 img, .slideshow-container .mySlides5 img, .slideshow-container .mySlides6 img {
+    width: 100%;
+}
+
+/*.left-pain .slideshow-container .mySlides img {
+    width: 100%;
+}*/
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*shop.html styling started here*/
+
+#Men, #Women {
+    text-align: center;
+    width: 45%;
+    margin: 2%;
+    padding: 2px;
+    float: left;
+    border: groove 2px azure;
+}
+
+#MShirts, #MPants, #MOther, #WShirts, #WPants, #WOther {
+    text-align: center;
+    width: 90%;
+    margin: inherit;
+}
+
+#Men .content p, #Women .content p {
+    display: inline-flex;
+    border: groove 2px crimson;
+    text-align: center;
+    margin: 2%;
+    align-content: center;
+}
+
+#Men img, #Women img {
+    width: 45px;
+    height: 45px;
+    margin: 2%;
+}
+
+.main-container .nav-content p {
+    display: inline-flex;
+    margin: 2%;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*signup.php*/
+
+.signup-form {
+    width: 400px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.signup-form input {
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.signup-form button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    border: none;
+    background-color: #222;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #111;
+}
+
+/* Style for Navigation bar */
+
+div {
+    display: block;
+    text-align: right;
+}
+
+div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+}
+
+.nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px 0px 0px 1px #000, 0px 1px 0px 1px #fff, 0 0 6px 3px blue;
+    border-radius: 6px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    float: left;
+    border-bottom: 4px #aaa solid;
+    margin-right: 1px;
+}
+
+.nav > li > a {
+    margin-bottom: 1px;
+    box-shadow: inset 0 2em .33em -0.5em #555;
+}
+
+.nav > li:hover,
+.nav > li:hover > a {
+    border-bottom-color: #013bdb;
+}
+
+.nav li:hover > a {
+    background-color: #000302;
+    color: #0571f8;
+}
+
+.nav > li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.nav > li:first-child > a {
+    border-radius: 4px 0 0 0;
+}
+
+.nav > li:last-child {
+    border-radius: 0 0 4px 0;
+    margin-right: 0;
+}
+
+.nav > li:last-child > a {
+    border-radius: 0 4px 0 0;
+}
+
+.nav li li a {
+    margin-top: 1px;
+}
+
+.nav li a:first-child:nth-last-child(2):before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    top: 50%;
+    right: 5px;
+}
+
+/* submenu positioning*/
+
+.nav ul {
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: 5px solid blue;
+    z-index: 1;
+    left: -99999em;
+}
+
+.nav > li:hover > ul {
+    left: auto;
+    margin-top: 5px;
+    min-width: 100%;
+}
+
+.nav > li li:hover > ul {
+    left: 100%;
+    margin-left: 1px;
+    top: -1px;
+}
+
+/* arrow hover styling */
+
+.nav > li > a:first-child:nth-last-child(2):before {
+    border-top-color: blue;
+}
+
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-bottom-color: blue;
+    margin-top: -5px
+}
+
+.nav li li > a:first-child:nth-last-child(2):before {
+    border-left-color: blue;
+    margin-top: -5px
+}
+
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+    border: 5px solid transparent;
+    border-right-color: blue;
+    right: 10px;
+}
+
+/*Newer replacement*/
+
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+}
+
+footer div {
+    text-align: center;
+    margin: 5px;
+}
+
+.info p {
+    color: blue;
+}
+
+.links a {
+    color: white;
+    padding-right: 7px;
+}
+
+.links a:hover {
+    color: blue;
+    padding-right: 7px;
+    text-decoration: none;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.backimg {
+    position: relative;
+    left: 325px;
+}
+
+#default {
+    min-height: 75px;
+    background-color: black;
+    border: none;
+}
+
+.sr-only {
+    background-color: black;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu li > a {
+    color: white;
+}
+
+.dropdown-menu li:hover > a {
+    background-color: black;
+    color: blue;
+}
+
+.nav a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+}
+
+.nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+    border-radius: 6px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    float: left;
+    border-bottom: 4px #aaa solid;
+    margin-right: 1px;
+}
+
+.nav > li > a {
+    margin-bottom: 1px;
+    box-shadow: inset 0 2em .33em -0.5em #555;
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+    background-color: black;
+    color: blue;
+}
+
+.caret {
+    color: blue;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    color: Blue;
+}
+
+.navbar-header .navbar-brand:hover {
+    background-color: black;
+    color: blue;
+}
+
+.navbar-header .slogan {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    top: 2px;
+    left: 75px;
+    color: blue;
+    font-size: 20px;
+}
+
+.navbar-nav .dropdown .dropdown-menu li {
+    color: white;
+    background: blue;
+}
+
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a {
+    color: white;
+}
+
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover {
+    background-color: black;
+    color: blue;
+}
+
+/*Integrating bootstrap in progress*/
+
+.container-fluid {
+    width: 100%;
+}
+
+.navbar-header {
+    float: left;
+    margin: 12px;
+    position: relative;
+    right: 20px;
+}
+
+.navbar-header p {
+    margin: 5px;
+}
+
+.navbar-header a {
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+    margin: 5px;
+}
+
+.navbar {
+    padding: 1%;
+}
+
+.navbar-form {
+    padding: 0px;
+}
+
+.navbar-form .form-group, .navbar-form .btn {
+    float: left;
+}
+
+.navbar-form {
+    float: right;
+    margin: 5px;
+}
+
+/*Media quires*/
+@media screen and (max-width: 480px) {
+    .navbar-header .slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navbar-header .slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+/*Font faces*/
+
+@font-face {
+    font-family: Viking;
+    src: url(sources/fonts/Norse.otf)
+}
+
+/*Special classes*/
+
+.hide {
+    display: none;
+}
+
+.solo {
+    align-content: center;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    min-width: 95%;
+    float: none;
+}

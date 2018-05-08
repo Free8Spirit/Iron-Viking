@@ -508,6 +508,173 @@ div ul {
     right: 10px;
 }
 
+/*Newer replacement*/
+
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+}
+
+.info p {
+    color: blue;
+}
+
+.links a {
+    color: white;
+    padding-right: 7px;
+}
+
+    .links a:hover {
+        color: blue;
+        padding-right: 7px;
+        text-decoration: none;
+    }
+
+main h3 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.backimg {
+    position: relative;
+    left: 325px;
+}
+
+#default {
+    min-height: 75px;
+    background-color: black;
+    border: none;
+}
+
+.sr-only {
+    background-color: black;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-menu li > a {
+    color: white;
+}
+
+.dropdown-menu li:hover > a {
+    background-color: black;
+    color: blue;
+}
+
+.nav a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 #000;
+    position: relative;
+}
+
+.nav {
+    vertical-align: top;
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+    border-radius: 6px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    float: left;
+    border-bottom: 4px #aaa solid;
+    margin-right: 1px;
+}
+
+.nav > li > a {
+    margin-bottom: 1px;
+    box-shadow: inset 0 2em .33em -0.5em #555;
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+    background-color: black;
+    color: blue;
+}
+
+.caret {
+    color: blue;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    color: Blue;
+}
+
+.navbar-header .navbar-brand:hover {
+    background-color: black;
+    color: blue;
+}
+
+.navbar-header .slogan {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    top: 2px;
+    left: 75px;
+    color: blue;
+    font-size: 20px;
+}
+
+.navbar-nav .dropdown .dropdown-menu li {
+    color: white;
+    background: blue;
+}
+
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a {
+    color: white;
+}
+
+.navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover {
+    background-color: black;
+    color: blue;
+}
+
 /*Media quires*/
 
 @media screen and (max-width: 480px) {

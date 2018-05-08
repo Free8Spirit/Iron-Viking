@@ -198,34 +198,62 @@
                 ?>
             </div>
         </section>-->
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li>
-                    <a href="sub-links/products/shop.html">Shop</a>
-                    <ul>
-                        <li>
-                            <a href="#">Men's</a>
-                            <ul>
-                                <li><a href="#">Men's T-Shirts</a></li>
-                                <li><a href="#">Men's Tank Tops</a></li>
-                                <li><a href="#">Men's Pants</a></li>
+        <!--Navigation for main page-->
+        <nav class="navbar navbar-default" id="default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">IRON VIKING</a>
+                    <p class="slogan">Live Unafraid, Die Strong</p>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>Men's</li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Men's Shirts</a></li>
+
+                                        <li><a href="#">Men's Tanks</a></li>
+
+                                        <li><a href="#">Men's Pants</a></li>
+                                    </ul>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>Women's</li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Women's Shirts</a></li>
+                                        <li><a href="#">Women's Pants</a></li>
+                                    </ul>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Accessories</a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#">Women's</a>
-                            <ul>
-                                <li><a href="#">Women's Tops</a></li>
-                                <li><a href="#">Women's Pants</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Headware</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                        <li><a href="#">About Me</a></li>
                     </ul>
-                </li>
-                <li><a href="#">Meet The Maker</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
         <section class="main-container">
             <section class="left-pain">
@@ -283,10 +311,10 @@
             <section class="central-pain">
                 <div class="main-pain">
                     <div id="Sec1" class="fade">
-                        <p> Sec 1 </p>
+                        <p> “Live Unafraid, Die Strong.” A simple phrase, synonymous with other phrases but this one rings true. I’ve been involved in plenty of harrowing situations where it was “me or the bad guy” as a police officer. Very quickly I realized peak physical wellness was vital, not only in life or death situations but in everyday life as well. Never have I been afraid of danger, in that I personally study “Odinism” or Norse Mythology. Vikings knew their destiny so they lived and died unafraid and strong. This lifestyle is what I wanted to instill in others. Steps by me were taken to promote combat preparedness and fitness in the county I patrolled by opening a free weight lifting class. This sparked my interest in powerlifting and assisting others to achieve greatness. With some study I rapidly grew in size and strength, learning what I could from fitness pros like Jay Cutler, Kai Greene, Jim Stoppani and the like. In time I gained a handful of endorsements to competitively lift. While I never placed in my competitions I learned so much from men and women above me. I took that experience and molded it into what you see today… The Iron Viking brand is here and I plan to outfit everyone in the best gym gear around! </p>
                     </div>
                     <div id="Sec2" class="hide fade">
-                        <p> Sec 2 </p>
+                        x
                     </div>
                     <div id="Sec3" class="hide fade">
                         <p> Sec 3 </p>
@@ -302,12 +330,12 @@
                     </div>
                 </div>
                 <div class="sub-pain">
-                    <p onclick="mySec1()"> sec 1 </p>
-                    <p onclick="mySec2()"> sec 2 </p>
-                    <p onclick="mySec3()"> sec 3 </p>
-                    <p onclick="mySec4()"> sec 4 </p>
-                    <p onclick="mySec5()"> sec 5 </p>
-                    <p onclick="mySec6()"> sec 6 </p>
+                    <button onclick="mySec1()"> sec 1 </button>
+                    <button onclick="mySec2()"> Macro </button>
+                    <button onclick="mySec3()"> sec 3 </button>
+                    <button onclick="mySec4()"> sec 4 </button>
+                    <button onclick="mySec5()"> sec 5 </button>
+                    <button onclick="mySec6()"> sec 6 </button>
                 </div>
             </section>
             <section class="right-pain">
@@ -363,6 +391,15 @@
                 </div>
             </section>
         </section>
-        <footer> hello world </footer>
+        <footer>
+            <div class="links">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="info">
+                <p>(816) 974-7510 | Copyright 2018 | Iron Viking Apparel</p>
+            </div>
+        </footer>
     </body>
 </html>

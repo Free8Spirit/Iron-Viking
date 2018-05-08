@@ -188,7 +188,6 @@ header .nav-login a {
 
 .main-container {
     padding-top: 40px;
-    font-size: 40px;
     line-height: 50px;
     text-align: center;
     align-content: center;
@@ -215,7 +214,7 @@ header .nav-login a {
 
 .central-pain .sub-pain, .central-pain .main-pain div {
     text-align: center;
-    width: 100%;
+    width: 98%;
     margin: 2%;
 }
 
@@ -224,7 +223,7 @@ header .nav-login a {
     margin: 2%;
 }
 
-.central-pain .sub-pain p {
+.central-pain .sub-pain button {
     display: inline;
     width: auto;
     margin: 5%;
@@ -507,6 +506,23 @@ div ul {
     border: 5px solid transparent;
     border-right-color: blue;
     right: 10px;
+}
+
+/*Media quires*/
+
+@media screen and (max-width: 480px) {
+    .navbar-header .slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navbar-header .slogan {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 600px) {

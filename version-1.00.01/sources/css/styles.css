@@ -239,7 +239,7 @@ header .nav-login a {
 }
 
 /* Hide the images by default */
-.slideshow-container .mySlides1, .slideshow-container .mySlides2, .slideshow-container .mySlides3 {
+.slideshow-container .mySlides1, .slideshow-container .mySlides2, .slideshow-container .mySlides3, .slideshow-container .mySlides4, .slideshow-container .mySlides5, .slideshow-container .mySlides6 {
     box-sizing: content-box;
     display: none;
     width: 100%;
@@ -252,7 +252,7 @@ header .nav-login a {
 }*/
 
 /* Caption text */
-.slideshow-container .mySlides1 .text, .slideshow-container .mySlides2 .text, .slideshow-container .mySlides3 .text {
+.slideshow-container .mySlides1 .text, .slideshow-container .mySlides2 .text, .slideshow-container .mySlides3 .text, .slideshow-container .mySlides4 .text, .slideshow-container .mySlides5 .text, .slideshow-container .mySlides6 .text {
     color: black;
     text-shadow: 0px 0px 2.5px crimson;
     font-size: 45%;
@@ -275,7 +275,7 @@ header .nav-login a {
 }*/
 
 /*Image size*/
-.slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img {
+.slideshow-container .mySlides1 img, .slideshow-container .mySlides2 img, .slideshow-container .mySlides3 img, .slideshow-container .mySlides4 img, .slideshow-container .mySlides5 img, .slideshow-container .mySlides6 img {
     width: 100%;
 }
 

@@ -61,6 +61,43 @@
                 setTimeout(showSlides1, 3000);
             }
 
+            function showSlides4(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides4");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides5, 3000);
+            }
+
+            function showSlides5(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides5");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides6, 3000);
+            }
+
+            function showSlides6(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides6");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides4, 3000);
+            }
+
             function mySec1() {
                 if (Sec1.classList.contains('hide')) {
                     Sec1.classList.remove('hide');
@@ -123,7 +160,7 @@
             }
         </script>
     </head>
-    <body onload="showSlides1(0)">
+    <body onload="showSlides1(1); showSlides4(1)">
         <!--<header>
             <nav>
                 <div class="main-wrapper">
@@ -192,7 +229,7 @@
         </nav>
         <section class="main-container">
             <section class="left-pain">
-                <div id="slideshow-container" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="mySlides1 fade" style="display: block;">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec1 Caption 1 </div>
@@ -274,52 +311,52 @@
                 </div>
             </section>
             <section class="right-pain">
-                <div id="slideshow-container" class="slideshow-container">
-                    <div class="mySlides1 fade" style="display: block;">
+                <div class="slideshow-container">
+                    <div class="mySlides4 fade" style="display: block;">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec1 Caption 1 </div>
                     </div>
 
-                    <div class="mySlides1 fade">
+                    <div class="mySlides4 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec1 Caption 2 </div>
                     </div>
 
-                    <div class="mySlides1 fade">
+                    <div class="mySlides4 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec1 Caption 3 </div>
                     </div>
                 </div>
 
                 <div class="slideshow-container">
-                    <div class="mySlides2 fade" style="display: block;">
+                    <div class="mySlides5 fade" style="display: block;">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec2 Caption 1 </div>
                     </div>
 
-                    <div class="mySlides2 fade">
+                    <div class="mySlides5 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec2 Caption 2 </div>
                     </div>
 
-                    <div class="mySlides2 fade">
+                    <div class="mySlides5 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec2 Caption 3 </div>
                     </div>
                 </div>
 
                 <div class="slideshow-container">
-                    <div class="mySlides3 fade" style="display: block;">
+                    <div class="mySlides6 fade" style="display: block;">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec3 Caption 1 </div>
                     </div>
 
-                    <div class="mySlides3 fade">
+                    <div class="mySlides6 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec3 Caption 2 </div>
                     </div>
 
-                    <div class="mySlides3 fade">
+                    <div class="mySlides6 fade">
                         <a href="index.html"><img src="sources/pictures/JPG/2319160_0.jpg" alt="click me" /></a>
                         <div class="text"> Sec3 Caption 3 </div>
                     </div>
